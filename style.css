@@ -118,9 +118,12 @@ nav ul li :hover::after{
 
 }
 @media screen and (max-width:420px){
-    nav {
+    nav ul li {
         display: block;
-        padding:1rem 0.5rem;
+        /* padding:0.5rem; */
+    }
+    .text h2{
+        font-size:1.5rem;
     }
 }
 /* Header section ends here */
@@ -129,9 +132,11 @@ nav ul li :hover::after{
     display: flex;
     align-items: center;
     justify-content:center;
+    flex-direction: row;
     margin-bottom: 7rem;
+    /* justify-content: space-between; */
 }
-#intro img{
+ .no img{
     margin:0.31rem;
     padding:0.37rem;
     /* border-style: solid;
@@ -141,28 +146,35 @@ nav ul li :hover::after{
     margin-right: 7rem;
     /* border-radius: 5px; */
 }
-.te h4{
+.no h4{
     margin-top:2rem;
     font-size:2rem;
     font-weight: 200;
     padding-bottom: 1rem;
 }
-.te h6{
+.no h6{
     font-size:1rem;
     color:#ea1538;
     font-weight: 200;
 }
-.te p{
+.no p{
     color:rgb(76, 73, 73);
 }
-.te i{
+.no i{
     margin:0.5rem 0.187rem 0.5rem 0rem;
 }
 @media(max-width:420px){
     .divide{
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
+    }
+    .no img{
+        height:300px;
+        width:280px;
+    }
+    .no h4{
+        font-size: 1.5rem;
+        font-weight: 200;
     }
 }
 
@@ -218,6 +230,17 @@ nav ul li :hover::after{
         align-items: center;
         justify-content: center;
     }
+    .part1{
+        width:80%;
+        margin-bottom: 0.7rem;
+    }
+    .part1 h2{
+        font-size:1.2rem;
+        font-weight: 200;
+    }
+    .part1 h2 span{
+        font-size:1rem;
+    }
 }
 /* End of Education seciton */
 
@@ -253,7 +276,7 @@ nav ul li :hover::after{
     font-size:1.25rem;
 }
 .img-box p{
-    padding:0.43rem;
+    padding:0.4rem;
     text-align: justify;
 }
 @media screen and (max-width:420px){
@@ -261,6 +284,11 @@ nav ul li :hover::after{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .img-box{
+        width:20rem;
+        height:26rem;
+        margin-bottom: 0.7rem;
     }
 }
 /* End of Hobbies */
@@ -347,5 +375,20 @@ nav ul li :hover::after{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .contact-me .me i{
+        font-size:1.5rem;
+    }
+    .contact-me .me h5{
+        font-size:1rem;
+    }
+    .contact-me .me p{
+        font-size:0.8rem;
+    }
+    .me .but{
+        padding:0.7rem 0.8rem;
+    }
+    .contact-me .me footer p{
+        font-size:1rem;
     }
 }
