@@ -1,17 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 /* This is applicable over all website */
 *{
-    /* background-color: #ececec; */
+    box-sizing: border-box;
     padding:0;
     margin:0;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;    
 }
 html{
     scroll-behavior: smooth;
     background-color: #ececec; 
+    width:100%;
+}
+#back{
+    --nav-height:4.6rem;
+
+    padding-top: var(--nav-height);
+}
+.nav{
+    width:100%;
+    height: var(--nav-height);
+    position: fixed;
+    left:0;
+    top:0;
+    transition: transform 0.4s;
+    z-index: 1;
+}
+.nav--hidden{
+    transform:translateY(calc(-1 * var(--nav-height)));
+    box-shadow: none;
 }
 /* end of universal selector */
-.back{
+#back{
     height:100vh;
     width:100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(gaming.jpeg);
@@ -23,8 +42,9 @@ html{
 }
 
 .logo{
-    font-size:30px;
+    font-size:2rem;
     color:white;
+    /* padding-left:2rem; */
 }
 .logo span{
     color:red;
@@ -32,59 +52,76 @@ html{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding:2% 5%;
-    background-color: rgba(15, 10, 10, 0.7);
-    
-}
-.logo{
-    color:white;
-    font-size: rem;
-}
-span{
-    color:#ea1538;
+    background-color: rgba(15, 10, 10, 0.9);
 }
 nav ul li{
     list-style-type: none;
     display: inline-block;
     padding:0 1.5rem;
+    position: relative;
 }
 nav ul li a{
     color:white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 200;
     font-size: 1rem;
     cursor: pointer;
 }
-nav ul li a:hover{
+nav ul li ::after{
+    content:'';
+    width:0%;
+    height:0.125rem;
+    background:#ea1538;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+nav ul li :hover::after{
+    width:100%;
+}
+
+/* nav .current{
     color:#ea1538;
-    transition: 0.3s;
-}
-nav .current{
-    color:#ea1538
-}
+    font-weight: bold;
+} */
 .text  {
     text-align: center;
     padding-top:13rem;
 }
 .text p{
     color:white;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 .text h2{
     margin-top:1.5rem;
     color:White;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .text button{
     margin-top:2rem;
     background-color: #ea1538;
     color:white;
-    font-size:15px;
+    font-size:1rem;
     padding:5px 12px;
     border:none;
-    border-radius: 25px;
+    border-radius: 1.5rem;
     cursor:text;
+}
+
+/* Media query */
+@media screen and (max-width:1024px){
+
+}
+@media screen and (max-width:768px){
+
+}
+@media screen and (max-width:420px){
+    nav {
+        display: block;
+        padding:1rem 0.5rem;
+    }
 }
 /* Header section ends here */
 
@@ -96,23 +133,23 @@ nav .current{
     animation:mymove 3s infinite;
 }
 #intro img{
-    margin:5px;
-    padding:6px;
+    margin:0.31rem;
+    padding:0.37rem;
     /* border-style: solid;
     border-width:4px;
     border-color: red green blue black; */
-    border:4px solid red;
+    border:0.25rem solid red;
     margin-right: 7rem;
     /* border-radius: 5px; */
 }
 .te h4{
     margin-top:2rem;
-    font-size:30px;
+    font-size:2rem;
     font-weight: 200;
     padding-bottom: 1rem;
 }
 .te h6{
-    font-size:17px;
+    font-size:1rem;
     color:#ea1538;
     font-weight: 200;
 }
@@ -120,7 +157,12 @@ nav .current{
     color:rgb(76, 73, 73);
 }
 .te i{
-    margin:8px 3px 8px 0px;
+    margin:0.5rem 0.187rem 0.5rem 0rem;
+}
+@media(max-width:700px){
+    .divide{
+        flex-direction: column;
+    }
 }
 
 /* Education section starts from here */
@@ -132,42 +174,42 @@ nav .current{
     margin-bottom: 2rem;
 }
 .part1{
-    padding-top:10px;
+    padding-top:0.625rem;
     width:30%;
     background-color: #f2f6f6;
     align-items: center;
     margin:auto;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 0.125rem;
     transition: 0.4s;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1.25rem 0rem rgba(0, 0, 0, 0.2);
 }
 .part1:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 1.25rem 0rem rgba(0, 0, 0, 0.4);
 }
 .part1 h2 span{
     font-weight: 200;
-    font-size:20px;
+    font-size:1.25rem;
     background-color: #ea1538;
     color:white;
-    padding:2px 5px;
-    border-radius: 2px;
+    padding:0.125rem 0.312rem;
+    border-radius: 0.125rem;
     text-align: left;
 }
 .part1 h2{
     font-weight: 200;
-    padding-bottom: 3px;
+    padding-bottom: 0.18rem;
     text-align: left;
 }
 .part1 h3{
     color:#ea1538;
     font-weight: 200;
-    font-size: 15px;
-    padding-bottom: 5px;
+    font-size: 1rem;
+    padding-bottom: 0.31rem;
     /* text-align: left; */
 }
 .part1 p{
-    padding-bottom: 7px;
+    padding-bottom: 0.5rem;
 }
 /* End of Education seciton */
 
@@ -191,19 +233,19 @@ nav .current{
 }
 .img-box{
     background-color: rgb(255, 255, 255);
-    width:350px;
-    height:450px;
-    border:7px solid rgb(255, 255, 255);
+    width:21.87rem;
+    height:28.125rem;
+    border:0.43rem solid rgb(255, 255, 255);
     border-radius: 0.7rem;
     overflow: hidden;
 }
 .img-box figcaption{
-    padding:10px 5px 5px;
+    padding:0.625rem 0.31rem 0.31rem;
     font-weight: 600;
-    font-size:20px;
+    font-size:1.25rem;
 }
 .img-box p{
-    padding:7px;
+    padding:0.43rem;
     text-align: justify;
 }
 /* End of Hobbies */
@@ -214,34 +256,34 @@ nav .current{
     justify-content: space-around;
 }
 .contact-me .fa{
-    font-size: 30px;
+    font-size: 2rem;
     color:#f44336;
-    margin-bottom: 10px;
-    margin-right:20px;
+    margin-bottom: 0.625rem;
+    margin-right:1.25rem;
 }
 .me div{
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 .me h5{
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 1.25rem;
+    margin-bottom: 0.3125rem;
     color:#555;
     font-weight:400;
     
 }
 .me p{
     color:#777;
-    font-size:15px;
+    font-size:1rem;
 }
 .me form{
         text-align: center;
 }
 .me input, .me textarea{
     width:60%;
-    padding:15px;
-    margin-bottom: 17px;
+    padding:1rem;
+    margin-bottom: 1rem;
     outline:none;
     border:1px solid #ccc;
 }
@@ -249,10 +291,10 @@ nav .current{
     background-color: white;
     color:red;
     border:1px solid red;
-    border-radius: 70px;
-    width: 150px;
+    border-radius: 4.375rem;
+    width: 9.375rem;
     transition: 0.2s;
-    padding:15px 22px;
+    padding:1rem 1.375rem;
 }
 .me .but:hover{
     background-color:red;
@@ -262,26 +304,26 @@ nav .current{
 /* Footer starts */
 .me footer .fa-linkedin-square{
     color:#0A66C2;
-    font-size: 30px;
+    font-size: 2rem;
     text-decoration: none;
-    padding:10px 0px;
-    padding-left:10px;
+    padding:0.625rem 0rem;
+    padding-left:0.625rem;
 }
 .me footer .fa-facebook{
     color:#3b5998;
     text-decoration: none;
-    font-size:28px;
+    font-size:1.75rem;
 }
 .me footer .fa-instagram{
     color:red;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2rem;
 }
 .me footer p{
     color:black;
 }
 .me footer h3{
     /* padding-top:70px; */
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 400;
 }
