@@ -446,11 +446,6 @@ font-weight: 200;
 .me footer p{
     color:black;
 }
-.me footer h3{
-    /* padding-top:70px; */
-    font-size: 1rem;
-    font-weight: 400;
-}
 @media screen and (max-width:1024px){
     .contact-me{
         flex-direction: row;
@@ -520,5 +515,15 @@ font-weight: 200;
     .contact-me .me footer p{
         font-size:1rem;
     }
+}
+.last{
+    background-color: rgba(76, 73, 74,0.9);
+    height:3rem;
+}
+.last h3{
+    color:white;
+    font-weight: 300;
+    text-align: center;
+    padding-top:0.8rem;
 }
 
