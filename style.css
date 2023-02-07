@@ -611,14 +611,16 @@ nav .fa {
     }
 }
 
-.last {
-    background-color: rgba(76, 73, 74, 0.9);
-    height: 3rem;
-}
-
 .last h3 {
+    background-color: rgba(76, 73, 74, 0.9);
     color: white;
     font-weight: 300;
     text-align: center;
-    padding-top: 0.8rem;
+    padding:1.5rem;
+}
+@media (max-width:768px){
+    .last h3{
+        font-size:1rem;
+        padding:1rem;
+    }
 }
