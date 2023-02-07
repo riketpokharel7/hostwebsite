@@ -1,77 +1,63 @@
-
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="icon" type="image/x-icon" href="log.png">
+    <title>Riket Pokharel Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta charset="UTF-8">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Riket Pokharel Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS, Portfolio">
-    <meta name="description" content="My Portfolio">
-    <meta name="author" content="Riket Pokharel">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="nofollow">
-    <!-- facebook link -->
-    <meta property="og:url" content="portfolio.html" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="What is your name" />
-    <meta property="og:description" content="My name is ........" />
-    <meta property="og:image" content="riket.jpg" />
-
-    <!-- Twitter link -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@flickr" />
-    <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
-    <meta name="twitter:description" content="View the album on Flickr." />
-    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
-
-
 
 </head>
-<!-- Start of body -->
 
 <body>
-    <header id="back">
-        <section class="hero">
-            <nav class="nav" id="navLinks">
-                <h2 class="logo">Ri<span>Ket</span></h2>
-                <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
-                <ul>
-                    <li><a href="#back" class="current">HOME</a></li>
-                    <li><a href="#intro">INTRO</a></li>
-                    <li><a href="#education">EDUCATION</a></li>
-                    <li><a href="#hobbies">HOBBIES</a></li>
-                    <li><a href="#contact">CONTACT ME</a></li>
-                </ul>
-                <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
-            </nav>
-            <div class="text" data-aos="fade-up-right">
-                <p>Welcome</p>
-                <h2>I am <span>Riket</span> Pokharel</h2>
-                <button class="dev">Front End Developer</button>
-            </div>
-        </section>
-    </header>
-    <!-- Header section ends here -->
 
-    <section id="intro">
-        <div class="divide" ><br><br><br>
-            <div class="no" data-aos="fade-left">
-            <img src="riket.jpg" alt="riket.jpg" height="330px" width="300px">
+    <section class="hero">
+        <nav> 
+            <h2 class="logo">Ri<span>Ket</span></h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#intro">Intro</a></li>
+                    <!-- <li><a href="#about">Skills</a></li> -->
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text" data-aos="fade-up-right">
+            <p>Welcome</p>
+            <h2>I am <span>Riket</span> Pokharel</h2>
+            <button class="dev">Front End Developer</button>
         </div>
-        <div class="no" data-aos="fade-down">
-            <h4>Riket Pokharel</h4>
+    </section>
+
+    <!-- My Intro -->
+
+    <section id="intro"><br><br><br>
+        <!-- <h2 style="color:red; text-align: center;margin-bottom: 7px;">My Intro</h2> -->
+        <div class="row" data-aos="fade-up">
+            <div class="about-me">
+                <img src="riket.jpg">
+            </div>
+            <div class="about-me">
+                 <h4>Riket Pokharel</h4>
             <h6>A Bachelor running student enthusiastic about Computer Science.</h6>
-            <p><br>Hello, I am Riket Pokharel. I am currently studying Bsc. Hons(Computer Science)<br> at Herlad College
+            <p><br>Hello, I am Riket Pokharel. I am currently studying Bsc. Hons(Computer Science)<br> at Herlad
+                College
                 Kathmandu which is affiliated to University of Wolverhampton, UK.<br> I have completed my Diploma in
-                Computer Engineering in 2022 from ACME College<br> of Engineering scoring 75.35%.<br> I have completed
-                my Secondary Education Examination(SEE) in 2018 from Shree <br>JanaJyoti Higher Secondary School scoring
+                Computer Engineering in 2022 from ACME College<br> of Engineering scoring 75.35%.<br> I have
+                completed
+                my Secondary Education Examination(SEE) in 2018 from Shree <br>JanaJyoti Higher Secondary School
+                scoring
                 'A' grade.<br><br></p>
             <p><i class="fa fa-circle-o" style="font-size:15px;color:red"></i> <span
                     style="color:black;font-weight:700">Home Address: </span>Lalbandi, Sarlahi</p>
@@ -79,27 +65,36 @@
                     style="color:black;font-weight:700">Current Address: </span>Naxal, Kathmandu</p>
             <p><i class="fa fa-circle-o" style="font-size:15px;color:red"></i> <span
                     style="color:black;font-weight:700">Age: </span>21</p>
+                
+            </div>
+
+            
         </div>
-        </div></section>
+        
+
     </section>
+    <!-- End of intro -->
+
+
+
     <!-- Start of education section -->
     
 
-    <section id="education"><br>
-        <h2 style="color:red; text-align: center;margin-bottom: 7px;">Education</h2>
-        <div class="part">
-            <div class="part1" data-aos="fade-left">
-                <h2><span>2022-current:</span><br> BSc.Hons(Computer Science)</h2>
+    <section id="education"><br><br><br><br>
+        <h2 style="color:red; text-align: center;margin-bottom: 7px;">Education</h2><br><br>
+        <div class="part" data-aos="fade-up">
+            <div class="part1">
+                <h2><span>2022-current</span><br> BSc.Hons(Computer Science)</h2>
                 <h3>University of Wolverhampton</h3>
                 <p>I am currently studying Bsc.Hons(Computer Science) at Herald College Kathmandu. I have basic knowledge about Java and Python.</p>
             </div>
-            <div class="part1"  data-aos="fade-up">
-                <h2><span>2018-2022:</span><br>Diploma in Computer Engineering</h2>
+            <div class="part1">
+                <h2><span>2018-2022</span><br>Diploma in Computer Engineering</h2>
                 <h3>ACME College of Engineering</h3>
                 <p>I am currently studying Bsc.Hons(Computer Science) at Herald College Kathmandu. I have basic knowledge about Java and Python.</p>
             </div>
-            <div class="part1" data-aos="fade-right">
-                <h2><span>2018:</span><br>Secondary Education Examination</h2>
+            <div class="part1">
+                <h2><span>2018</span><br>Secondary Education Examination</h2>
                 <h3>Shree JanaJyoti Higher Secondary School</h3>
                 <p>I am currently studying Bsc.Hons(Computer Science) at Herald College Kathmandu. I have basic knowledge about Java and Python.</p>
             </div>
@@ -111,39 +106,39 @@
 
     <!-- Start of Hobbies -->
     
-    <section id="hobbies"><br>
-        <h2 style="color:red; text-align: center;margin-bottom: 7px;">Hobbies</h2><br>
+    <section id="hobbies"><br><br><br><br>
+        <h2 style="color:red; text-align: center;margin-bottom: 7px;">Hobbies</h2><br><br>
         <div class="new">
-        <div class="img-box" data-aos="zoom-in">
-            <img src="pp.jpg" class="pp">
-            <figcaption>CODING</figcaption>
-            <p>I love coding. I have good knowledge of front end development. I usually wake up all the night for coding. Its my passion.</p>
-        </div>
-        <div class="img-box" data-aos="zoom-in">
-            <img src="sp.jpg" class="pp">
-            <figcaption>SPORTS</figcaption>
-            <p>Since my childhood I was a football fan. I usually go to futsal to play football. I support a Spanish club Real Madrid.</p>
-        </div>
-        <div class="img-box" data-aos="zoom-in">
-            <img src="gaming.png" class="pp">
-            <figcaption>GAMING</figcaption>
-            <p>I also love to play video games like GTAV, FIFA, PES, etc. When I am free I enjoy my time by playing different video games.</p>
-        </div>
+            <div class="img-box" data-aos="zoom-in">
+                <img src="pp.jpg" class="pp">
+                <figcaption>CODING</figcaption>
+                <p>I love coding. I have good knowledge of front end development. I usually wake up all the night for coding. Its my passion.</p>
+            </div>
+            <div class="img-box" data-aos="zoom-in">
+                <img src="sp.jpg" class="pp">
+                <figcaption>SPORTS</figcaption>
+                <p>Since my childhood I was a football fan. I usually go to futsal to play football. I support a Spanish club Real Madrid.</p>
+            </div>
+            <div class="img-box" data-aos="zoom-in">
+                <img src="gaming.png" class="pp">
+                <figcaption>GAMING</figcaption>
+                <p>I also love to play video games like GTAV, FIFA, PES, etc. When I am free I enjoy my time by playing different video games.</p>
+            </div>
 
-    </div>  
+        </div>  
     </section><br><br>
     <!-- End of Hobbies -->
 
     <!-- Start of contact me -->
-    <div id="contact" data-aos="fade-up">
+    <div id="contact" data-aos="fade-up"><br><br><br>
         <h2 style="color:red; text-align: center;margin-bottom: 7px;">Contact Me</h2><br><br>
         <div class="contact-me">
             <div class="me">
                 <div>
-                <i class="fa fa-home"></i>
-                <span>
-                    <a href="https://goo.gl/maps/g66UexJREywRjAPU9" target="_blank" style="text-decoration: none;"><h5>Hadigaun Marg, St.George</h5></a>
-                    <p>Bishalnagar, Kathmandu</p>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <a href="https://goo.gl/maps/g66UexJREywRjAPU9" target="_blank" style="text-decoration: none;"><h5>Hadigaun Marg, St.George</h5></a>
+                        <p>Bishalnagar, Kathmandu</p>
                     </span>
                 </div>
                 <div>
@@ -152,14 +147,14 @@
                         <a href="tel:+977 9824818023" style="text-decoration: none;"><h5>+977 9824818023</h5></a>
                         <p>Sunday to Friday</p>
                     </span>
-                    </div>
-                    <div>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
                         <a href="mailto:pokharelriket777@gmail.com" style="text-decoration: none;"> <h5>pokharelriket777@gmail.com</h5></a>
-                            <p>Feel free to email</p>
-                        </span>
-                        </div>
+                        <p>Feel free to email</p>
+                    </span>
+                </div>
             </div>
             
             <div class="me">
@@ -170,61 +165,68 @@
                     
                     <textarea rows="4" placeholder="Enter your message" name="message" required></textarea><br>
                     <input class="but" type="submit" value="Send Message">
-        
+
                 </form>
 
             </div>
             <div class="me">
                 <footer>
                     <p>Let's get connected:<br><a href="https://www.linkedin.com/in/pokharel-riket-631045220/"
-                            class="fa fa-linkedin-square" target="_blank"></a><a href="https://www.facebook.com/ronaldista.riket"
-                            class="fa fa-facebook" target="_blank"></a> <a href="https://www.instagram.com/pokharelriket/"
-                            class="fa fa-instagram" target="_blank"></a> </p>
-                           <h3>copyright&copy2023</h3>
-                </footer>
+                        class="fa fa-linkedin-square" target="_blank"></a><a href="https://www.facebook.com/ronaldista.riket"
+                        class="fa fa-facebook" target="_blank"></a> <a href="https://www.instagram.com/pokharelriket/"
+                        class="fa fa-instagram" target="_blank"></a> </p>
+                        <h3>copyright&copy2023</h3>
+                    </footer>
+                </div>
+
             </div>
 
-        </div>
-        
-    </div><br>
+        </div><br>
+
+
+
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 170, duration: 1200
+            });
+        </script>
+        <!-- Enables hidden nav bar -->
+    <!-- <script>
+    {
+        const nav = document.querySelector(".nav");
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll",() =>{
+            if (lastScrollY<window.scrollY) {
+                nav.classList.add("nav--hidden");
+            }else{
+                nav.classList.remove("nav--hidden");
+            }
+            lastScrollY= window.scrollY;
+        });
+
+    }
+    </script>
+    <!- Js for Toggle Menu -->
+        <script>
+            var navLinks = document.getElementById('navLinks');
+
+            function showMenu(){
+                navLinks.style.right = "0px";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+
+    </html>
 
     
 
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 170, duration: 1200
-        });
-        </script>
-	<!-- Enables hidden nav bar -->
-    <script>
-	{
-		const nav = document.querySelector(".nav");
-		let lastScrollY = window.scrollY;
+    
 
-		window.addEventListener("scroll",() =>{
-			if (lastScrollY<window.scrollY) {
-				nav.classList.add("nav--hidden");
-			}else{
-				nav.classList.remove("nav--hidden");
-			}
-			lastScrollY= window.scrollY;
-		});
-
-	}
-    </script>
-    <!-- Js for toggle menu -->
-    <script>
-        var navLinks = document.getElementById('navLinks');
-
-        function showMenu(){
-            navLinks.style.right = "0px";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-    </script>
 </body>
-
 </html>
